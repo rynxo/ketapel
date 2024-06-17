@@ -1,0 +1,11 @@
+// Menambahkan Migration
+php artisan make:migration create_users_table
+
+// Menambahkan Model dan Migration Sekaligus
+php artisan make:model namaTable -m namaTable
+
+// Melakukan migration secara spesifik
+php artisan migrate --path=database/migrations/namafileTable.php
+
+// Melakukan faker dengan seeder
+php artisan db:seed --class=PelangganSeeder;
